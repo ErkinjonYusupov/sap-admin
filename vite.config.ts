@@ -1,5 +1,6 @@
 import path from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import Shiki from '@shikijs/markdown-it'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Vue from '@vitejs/plugin-vue'
@@ -36,8 +37,14 @@ export default defineConfig({
       plugins: {
         vue: Vue({
           include: [/\.vue$/, /\.md$/],
+          template: { transformAssetUrls },
         }),
       },
+    }),
+
+    // https://github.com/quasarframework/quasar/tree/dev/vite-plugin
+    quasar({
+      sassVariables: 'src/styles/quasar-variables.sass',
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -55,6 +62,14 @@ export default defineConfig({
         {
           // add any other imports you were relying on
           'vue-router/auto': ['useLink'],
+        },
+        {
+          quasar: [
+            'useQuasar',
+            'Notify',
+            'Dialog',
+            'Loading',
+          ],
         },
       ],
       dts: 'src/auto-imports.d.ts',
@@ -162,6 +177,6 @@ export default defineConfig({
 
   ssr: {
     // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/],
+    noExternal: ['workbox-window', /vue-i18n/, 'quasar'],
   },
 })

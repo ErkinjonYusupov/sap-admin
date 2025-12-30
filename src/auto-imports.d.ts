@@ -6,7 +6,10 @@
 // biome-ignore lint: disable
 export {}
 declare global {
+  const Dialog: typeof import('quasar')['Dialog']
   const EffectScope: typeof import('vue')['EffectScope']
+  const Loading: typeof import('quasar')['Loading']
+  const Notify: typeof import('quasar')['Notify']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const computed: typeof import('vue')['computed']
@@ -232,6 +235,7 @@ declare global {
   const usePreferredReducedMotion: typeof import('@vueuse/core')['usePreferredReducedMotion']
   const usePreferredReducedTransparency: typeof import('@vueuse/core')['usePreferredReducedTransparency']
   const usePrevious: typeof import('@vueuse/core')['usePrevious']
+  const useQuasar: typeof import('quasar')['useQuasar']
   const useRafFn: typeof import('@vueuse/core')['useRafFn']
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']

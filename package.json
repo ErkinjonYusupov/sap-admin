@@ -17,11 +17,13 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
+    "@quasar/extras": "catalog:frontend",
     "@unhead/vue": "catalog:frontend",
     "@unocss/reset": "catalog:frontend",
     "@vueuse/core": "catalog:frontend",
     "nprogress": "catalog:frontend",
     "pinia": "catalog:frontend",
+    "quasar": "catalog:frontend",
     "vue": "catalog:frontend",
     "vue-i18n": "catalog:frontend",
     "vue-router": "catalog:frontend"
@@ -30,6 +32,7 @@
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:dev",
     "@intlify/unplugin-vue-i18n": "catalog:build",
+    "@quasar/vite-plugin": "catalog:build",
     "@shikijs/markdown-it": "catalog:build",
     "@types/markdown-it-link-attributes": "catalog:types",
     "@types/nprogress": "catalog:types",
@@ -47,6 +50,7 @@
     "lint-staged": "catalog:dev",
     "markdown-it-link-attributes": "catalog:build",
     "rollup": "catalog:build",
+    "sass": "catalog:build",
     "shiki": "catalog:build",
     "simple-git-hooks": "catalog:dev",
     "taze": "catalog:dev",
