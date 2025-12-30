@@ -43,9 +43,7 @@ export default defineConfig({
     }),
 
     // https://github.com/quasarframework/quasar/tree/dev/vite-plugin
-    quasar({
-      sassVariables: 'src/styles/quasar-variables.sass',
-    }),
+    quasar(),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
@@ -70,6 +68,9 @@ export default defineConfig({
             'Dialog',
             'Loading',
           ],
+        },
+        {
+          '~/composables/useOverlay': ['getOverlay'],
         },
       ],
       dts: 'src/auto-imports.d.ts',

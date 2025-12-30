@@ -1,4 +1,4 @@
-import type { UserModule } from './types'
+import type { UserModule } from './types/types'
 
 import { setupLayouts } from 'virtual:generated-layouts'
 import { ViteSSG } from 'vite-ssg'

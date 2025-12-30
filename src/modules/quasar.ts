@@ -1,4 +1,4 @@
-import type { UserModule } from '~/types'
+import type { UserModule } from '~/types/types'
 import { Dialog, Loading, Notify, Quasar } from 'quasar'
 import iconSet from 'quasar/icon-set/material-icons'
 import '@quasar/extras/material-icons/material-icons.css'

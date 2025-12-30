@@ -17,10 +17,12 @@
     "sizecheck": "npx vite-bundle-visualizer"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
     "@quasar/extras": "catalog:frontend",
     "@unhead/vue": "catalog:frontend",
     "@unocss/reset": "catalog:frontend",
     "@vueuse/core": "catalog:frontend",
+    "axios": "^1.13.2",
     "nprogress": "catalog:frontend",
     "pinia": "catalog:frontend",
     "quasar": "catalog:frontend",
