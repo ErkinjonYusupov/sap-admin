@@ -40,12 +40,17 @@ const navbarConfig: INavbarConfig = {
       rule: 'products_show',
     },
     {
-      title: 'Yetkazuvchilar',
-      icon: 'mdi:truck-delivery',
-      to: '/suppliers',
-      rule: 'suppliers_show',
+      title: 'Buyurtmalar',
+      icon: 'mdi:file-document-multiple',
+      to: '/orders',
+      rule: 'orders_show',
     },
-
+    {
+      title: 'Ombor',
+      icon: 'mdi:warehouse',
+      to: '/stock',
+      rule: 'stock_show',
+    },
 
 
   ],

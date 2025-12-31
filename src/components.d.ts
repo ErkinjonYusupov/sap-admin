@@ -8,16 +8,21 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AddItemDialog: typeof import('./components/orders/AddItemDialog.vue')['default']
+    AdjustDialog: typeof import('./components/stock/AdjustDialog.vue')['default']
     Appbar: typeof import('./components/main/Appbar.vue')['default']
     CategoriesTable: typeof import('./components/categories/CategoriesTable.vue')['default']
     EditDialog: typeof import('./components/categories/EditDialog.vue')['default']
     EditDilaog: typeof import('./components/users/EditDilaog.vue')['default']
+    MovementsTable: typeof import('./components/stock/MovementsTable.vue')['default']
+    OrdersTable: typeof import('./components/orders/OrdersTable.vue')['default']
     ProductsDialog: typeof import('./components/suppliers/ProductsDialog.vue')['default']
     ProductsTable: typeof import('./components/products/ProductsTable.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sidebar: typeof import('./components/main/Sidebar.vue')['default']
+    StockTable: typeof import('./components/stock/StockTable.vue')['default']
     SuppliersTable: typeof import('./components/suppliers/SuppliersTable.vue')['default']
     TableContainer: typeof import('./components/base/TableContainer.vue')['default']
     TheCounter: typeof import('./components/TheCounter.vue')['default']

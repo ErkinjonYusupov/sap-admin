@@ -74,7 +74,6 @@ defineExpose({ uploadDialog })
                 <th>categoryId</th>
                 <th>barcode</th>
                 <th>unit</th>
-                <th>inputPrice</th>
                 <th>sellPrice</th>
               </tr>
             </thead>
@@ -84,7 +83,6 @@ defineExpose({ uploadDialog })
                 <td class="text-caption">5</td>
                 <td class="text-caption">1234567890123</td>
                 <td class="text-caption">dona</td>
-                <td class="text-caption">10000000</td>
                 <td class="text-caption">12000000</td>
               </tr>
             </tbody>
@@ -92,7 +90,7 @@ defineExpose({ uploadDialog })
 
           <div class="text-caption text-grey-7">
             <strong>Majburiy:</strong> title, categoryId, barcode<br>
-            <strong>Ixtiyoriy:</strong> unit (default: "dona"), inputPrice (default: 0), sellPrice (default: 0)
+            <strong>Ixtiyoriy:</strong> unit (default: "dona"), sellPrice (default: 0)
           </div>
         </div>
 
