@@ -27,7 +27,6 @@ interface IState {
     categoryId: number | null
     unit: string
     barcode: string
-    inputPrice: number | null
     sellPrice: number | null
   }
   editDialog: boolean
@@ -45,7 +44,6 @@ export const useProductsStore = defineStore('products', {
       categoryId: null,
       unit: 'dona',
       barcode: '',
-      inputPrice: null,
       sellPrice: null,
     },
     editDialog: false,
@@ -102,7 +100,6 @@ export const useProductsStore = defineStore('products', {
           categoryId: this.obj.categoryId,
           unit: this.obj.unit,
           barcode: this.obj.barcode,
-          inputPrice: this.obj.inputPrice,
           sellPrice: this.obj.sellPrice,
         }
 
@@ -220,7 +217,6 @@ export const useProductsStore = defineStore('products', {
         categoryId: null,
         unit: 'dona',
         barcode: '',
-        inputPrice: null,
         sellPrice: null,
       }
     },

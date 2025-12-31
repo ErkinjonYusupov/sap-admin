@@ -75,13 +75,6 @@ const columns: QTableColumn[] = [
     align: 'center',
   },
   {
-    name: 'inputPrice',
-    label: 'Kirim narxi',
-    field: (row: any) => row.inputPrice?.toLocaleString() || '0',
-    align: 'right',
-    sortable: true,
-  },
-  {
     name: 'sellPrice',
     label: 'Sotuv narxi',
     field: (row: any) => row.sellPrice?.toLocaleString() || '0',

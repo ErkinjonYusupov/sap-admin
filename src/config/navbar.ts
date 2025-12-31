@@ -39,6 +39,12 @@ const navbarConfig: INavbarConfig = {
       to: '/products',
       rule: 'products_show',
     },
+    {
+      title: 'Yetkazuvchilar',
+      icon: 'mdi:truck-delivery',
+      to: '/suppliers',
+      rule: 'suppliers_show',
+    },
 
 
 

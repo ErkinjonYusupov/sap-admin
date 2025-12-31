@@ -184,22 +184,7 @@ function closeDialog() {
               </q-select>
             </div>
 
-            <div class="col-6">
-              <q-input
-                :rules="[required()]"
-                v-model.number="store.obj.inputPrice"
-                label="Kirim narxi"
-                outlined
-                type="number"
-                min="0"
-              >
-                <template #append>
-                  <q-icon name="mdi-currency-usd" />
-                </template>
-              </q-input>
-            </div>
-
-            <div class="col-6">
+            <div class="col-12">
               <q-input
                 :rules="[required()]"
                 v-model.number="store.obj.sellPrice"

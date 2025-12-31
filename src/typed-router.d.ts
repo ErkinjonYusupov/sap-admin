@@ -28,6 +28,8 @@ declare module 'vue-router/auto-routes' {
     '/products': RouteRecordInfo<'/products', '/products', Record<never, never>, Record<never, never>>,
     '/quasar-demo': RouteRecordInfo<'/quasar-demo', '/quasar-demo', Record<never, never>, Record<never, never>>,
     '/README': RouteRecordInfo<'/README', '/README', Record<never, never>, Record<never, never>>,
+    '/supplier-products': RouteRecordInfo<'/supplier-products', '/supplier-products', Record<never, never>, Record<never, never>>,
+    '/suppliers': RouteRecordInfo<'/suppliers', '/suppliers', Record<never, never>, Record<never, never>>,
     '/users': RouteRecordInfo<'/users', '/users', Record<never, never>, Record<never, never>>,
   }
 }
