@@ -15,8 +15,8 @@ function useOverlay(state?: boolean) {
       message: 'Yuklanmoqda...',
       spinnerColor: 'primary',
       messageColor: 'white',
-      backgroundColor: 'dark',
-      customClass: 'glossy',
+
+      
     })
   }
   else if (state === false) {

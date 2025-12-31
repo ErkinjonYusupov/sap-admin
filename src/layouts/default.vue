@@ -1,12 +1,15 @@
 <script lang='ts' setup>
-
+import Appbar from '~/components/main/Appbar.vue'
+import Sidebar from '~/components/main/Sidebar.vue'
 </script>
 
 <template>
   <q-layout view="lhh LpR lff">
+    <Appbar />
+    <Sidebar />
 
     <q-page-container bg-gray-300>
-      <q-page class="mb-0 rounded-4px bg-[#eaecf5] dark:bg-gray-900">
+      <q-page class="mb-0 bg-[#eaecf5] dark:bg-gray-900">
  
         <router-view #="{ Component, route }">
           <transition name="fade" mode="out-in">

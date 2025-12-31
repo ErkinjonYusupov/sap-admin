@@ -1,3 +1,4 @@
+
 import path from 'node:path'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
@@ -43,7 +44,9 @@ export default defineConfig({
     }),
 
     // https://github.com/quasarframework/quasar/tree/dev/vite-plugin
-    quasar(),
+    quasar({
+      sassVariables: path.resolve(__dirname, 'src/styles/quasar-variables.sass'),
+    }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),

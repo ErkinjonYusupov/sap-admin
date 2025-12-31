@@ -1,4 +1,3 @@
-import type { QDialogOptions } from 'quasar'
 import { Dialog } from 'quasar'
 
 interface DialogOptions {

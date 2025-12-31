@@ -12,6 +12,6 @@ export interface INavbarConfig {
   links: INavbarLink[]
 }
 export interface IPaginate {
-  current_page: number
-  last_page: number
+  totalPages: number
+  currentPage: number
 }

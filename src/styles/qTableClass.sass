@@ -1,0 +1,16 @@
+.sticky-headered-table
+  @apply dark:bg-gray-8 dark:text-gray-3 
+  thead tr th
+    
+    position: sticky
+    z-index: 1
+    top: 0
+  thead tr:first-child th
+    top: 0
+  tr
+    @apply dark:hover:bg-gray-6
+  tr:nth-child(even)
+   @apply bg-[#F9FAFB] dark:bg-gray-5 dark:hover:bg-gray-6
+@media (max-width: 1280px) 
+  td 
+    @apply text-8px

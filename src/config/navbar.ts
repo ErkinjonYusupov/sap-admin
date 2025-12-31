@@ -4,32 +4,43 @@ const navbarConfig: INavbarConfig = {
   links: [
     {
       title: 'Bosh sahifa',
-      icon: 'icon',
+      icon: 'codicon:home',
       to: '/',
       rule: 'dashborad_show',
     },
     {
       title: 'Foydalanuvchilar',
-      icon: 'icon',
+      icon: 'majesticons:users-line',
       children: [
         {
           title: 'Foydalanuvchilar',
-          icon: 'icon',
-          to: '/product-service/product-connection',
+          icon: 'majesticons:users-line',
+          to: '/users',
           rule: 'users_show',
         },
         {
           title: 'Mijozlar',
           icon: 'carbon:category-new-each',
-          to: '/product-service/specifications',
+          to: '/customers',
           rule: 'customers_show',
         },
-        
+
       ],
     },
-    
+    {
+      title: 'Kategoriyalar',
+      icon: 'mdi:folder-multiple-outline',
+      to: '/categories',
+      rule: 'categories_show',
+    },
+    {
+      title: 'Mahsulotlar',
+      icon: 'mdi:package-variant-closed',
+      to: '/products',
+      rule: 'products_show',
+    },
 
-     
+
 
   ],
 }

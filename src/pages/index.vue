@@ -8,4 +8,9 @@ const store = useAuthStore()
   </div>
 </template>
 
+<route lang="yaml">
+meta:
+  rule: 'dashborad_show'
+</route>
+
 

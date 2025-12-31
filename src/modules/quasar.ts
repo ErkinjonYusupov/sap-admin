@@ -14,5 +14,8 @@ export const install: UserModule = ({ app }) => {
       Loading,
     },
     iconSet,
+    config: {
+      dark: 'auto', // 'auto' - tizim dark mode ni avtomatik aniqlaydi
+    },
   })
 }
